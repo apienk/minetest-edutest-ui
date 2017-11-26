@@ -1,7 +1,7 @@
 # minetest-edutest-ui
 This mod provides user interface extensions for the MinetestEDU/EDUtest project. It depends on [my fork](https://github.com/apienk/edutest-chatcommands) of `edutest-chatcommands` mod by Isidor Zeuner.
 
-The goal of the MinetestEDU or EDUtest project is to make Minetest easy to use by a teacher in a classroom environment. The original idea was described in [this Minetest forum thread](https://forum.minetest.net/viewtopic.php?f=5&t=11452). The project is a collection of mods (a modpack) that allows teachers to feel in control of the students while in game. The following features are provided by the GUI (Note: Buttons will only show up if optionally `their respective mods` are loaded):
+The goal of the MinetestEDU or EDUtest project is to make Minetest easy to use by a teacher in a classroom environment. The original idea was described in [this Minetest forum thread](https://forum.minetest.net/viewtopic.php?f=5&t=11452). The project is a collection of mods (a modpack) that allows teachers to feel in control of the students while in game. The following features are provided by the GUI (Note: Buttons will only show up if optionally `their respective mods` are loaded)(Note: The formspec tabs will only show up if player has `instructor` privilege):
 
 Components
 ----------
