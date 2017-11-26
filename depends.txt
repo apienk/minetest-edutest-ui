@@ -1,0 +1,11 @@
+default
+sfinv
+edutest_chatcommands
+areas?
+jailbox?
+teaching?
+freeze?
+signs?
+invmanagement?
+bookmarks_gui?
+invisible?
