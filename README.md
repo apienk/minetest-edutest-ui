@@ -51,6 +51,11 @@ Other functions
 - reward system
 - controlled PvP
 
+# Other useful mods to use in classroom
+- my fork of `teaching` mod: https://github.com/apienk/minetest-teaching (with hires letters and other features)
+- my fork of `wardrobe` mod: https://github.com/apienk/minetest-mod-wardrobe (with nice GUI)
+- my `jailbox` mod: https://github.com/apienk/minetest-jailbox
+
 # Some lesson ideas
 
 Mathematics:
