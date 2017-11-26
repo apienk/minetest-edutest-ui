@@ -43,7 +43,7 @@ Other functions
 - grant/revoke privileges to/from all students, a student or oneself (Note: if you need an assistant teacher grant him/her 'all' privileges)
 - turn oneself invisible `invisible`
 
-#To do
+# To do
 - ask questions in formspec and aggregate answers
 - student groups
 - written assignments
@@ -51,7 +51,7 @@ Other functions
 - reward system
 - controlled PvP
 
-#Some lesson ideas
+# Some lesson ideas
 
 Mathematics:
 - build a city of buildings and ask students to calculate total blocks per building
