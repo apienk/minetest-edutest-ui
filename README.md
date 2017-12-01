@@ -1,7 +1,10 @@
 # minetest-edutest-ui
 This mod provides user interface extensions for the MinetestEDU/EDUtest project. It depends on [my fork](https://github.com/apienk/edutest-chatcommands) of `edutest-chatcommands` mod by Isidor Zeuner.
 
-The goal of the MinetestEDU or EDUtest project is to make Minetest easy to use by a teacher in a classroom environment. The original idea was described in [this Minetest forum thread](https://forum.minetest.net/viewtopic.php?f=5&t=11452). The project is a collection of mods (a modpack) that allows teachers to feel in control of the students while in game. The following features are provided by the GUI (Note: Buttons will only show up if optionally `their respective mods` are loaded)(Note: The formspec tabs will only show up if player has `instructor` privilege):
+The goal of the MinetestEDU or EDUtest project is to make Minetest easy to use by a teacher in a classroom environment. The original idea was described in [this Minetest forum thread](https://forum.minetest.net/viewtopic.php?f=5&t=11452). The project is a collection of mods (a modpack) that allows teachers to feel in control of the students while in game. The following features are provided by the GUI:
+
+**Note 1:** Buttons will only show up if optionally `their respective mods` are loaded
+**Note 2:** The formspec tabs will only show up if player has `instructor` privilege
 
 Components
 ----------
@@ -42,6 +45,16 @@ Other functions
 - freeze/unfreeze all students or a student (also mutes him or her in chat) `freeze`
 - grant/revoke privileges to/from all students, a student or oneself (Note: if you need an assistant teacher grant him/her 'all' privileges)
 - turn oneself invisible `invisible`
+
+# Installation
+- download the repository as ZIP: https://github.com/apienk/minetest-edutest-ui/archive/master.zip
+- unpack ZIP to your mods folder: `.minetest/mods/` on Linux or `minetest-install-directory/mods/` on Windows
+- rename folder `minetest-edutest-ui-master` to `edutest-ui`
+- enable the mod in your `world.mt` (add line `load_mod_edutest_ui=true`) or using the game GUI
+- don't forget to install my fork of `edutest-chatcommands` mod (link below) as `edutest-ui` depends on it
+- for complete functionality also install mods: `areas`, `jailbox`, `teaching` (preferably my fork, link below), `freeze`, `invmanagement`, `bookmarks_gui` (preferably my fork, link below), `invisible`
+- to play as teacher grant yourself all privileges (type `/grantme all` in game)
+- students don't need to be assigned any privileges to be affected by `all students` commands, just leave default (`shout` and `interact`)
 
 # To do
 - ask questions in formspec and aggregate answers
