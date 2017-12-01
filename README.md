@@ -38,37 +38,37 @@ The goal of the MinetestEDU or EDUtest project is to make Minetest easy to use b
 - time selector
 
 ### Inventory functions
-- \[Give\] give items to all students, a student or yourself
-- \[Give itempack\] give itempacks (collections of items) to all students, a student or yourself
-- \[Set itempack\] define a new itempack from your current inventory
-- \[Del\] delete a stored itempack
-- \[Clear inv\] clear inventory of all students, a student or yourself `invmanagement`
-- \[Check inv\] check inventory of a student
-- \[Destroy item\] destroy the item you wield
+- \[_Give_\] give items to all students, a student or yourself
+- \[_Give itempack_\] give itempacks (collections of items) to all students, a student or yourself
+- \[_Store itempack_\] define a new itempack from your current inventory
+- \[_Del_\] delete a stored itempack
+- \[_Clear inv_\] clear inventory of all students, a student or yourself `invmanagement`
+- \[_Check inv_\] check inventory of a student
+- \[_Destroy item_\] destroy the item you wield
 
 ### Messaging functions
-- \[Message\] message all students or a student using on-screen chat (top of screen, unintrusive)
-- \[Announce\] message all students or a student using a custom dialog (center of screen, stops interaction)
-- \[Alphabetize\] give oneself a complete set of letter/number blocks needed to build a message in the world `teaching`
+- \[_Message_\] message all students or a student using on-screen chat (top of screen, unintrusive)
+- \[_Announce_\] message all students or a student using a custom dialog (center of screen, stops interaction)
+- \[_Alphabetize_\] give oneself a complete set of letter/number blocks needed to build a message in the world `teaching`
 
 ### World functions
-- \[Create area\] create a protected area (where only the owner can build or dig) for a student or yourself `areas`
-- \[Remove area\] remove a protected area (where only the owner can build or dig) from a student or yourself `areas`
-- \[Open area\] open an existing protected area for building and digging by non-owners `areas`
-- \[Close area\] close an existing protected area for building and digging by non-owners `areas`
-- \[Create jailbox\] erect an impenetrable and indestructible barrier box (jailbox) around an area to keep students from wandering too far or to protect it `jailbox`
-- \[Remove jailbox\] remove the existing impenetrable and indestructible barrier box (jailbox) around an area `jailbox`
-- \[Bring me to\] teleport yourself to a student
-- \[Bring to me\] teleport all students or a student to yourself
-- \[Time\] set in-game time (dawn, noon, dusk, midnight)
+- \[_Create area_\] create a protected area (where only the owner can build or dig) for a student or yourself `areas`
+- \[_Remove area_\] remove a protected area (where only the owner can build or dig) from a student or yourself `areas`
+- \[_Open area_\] open an existing protected area for building and digging by non-owners `areas`
+- \[_Close area_\] close an existing protected area for building and digging by non-owners `areas`
+- \[_Create jailbox_\] erect an impenetrable and indestructible barrier box (jailbox) around an area to keep students from wandering too far or to protect it `jailbox`
+- \[_Remove jailbox_\] remove the existing impenetrable and indestructible barrier box (jailbox) around an area `jailbox`
+- \[_Bring me to_\] teleport yourself to a student
+- \[_Bring to me_\] teleport all students or a student to yourself
+- \[_Time_\] set in-game time (dawn, noon, dusk, midnight)
 
 ### Other functions
-- \[Heal\] heal all students, a student or yourself
-- \[Freeze\] freeze all students or a student (also mutes him or her in chat) `freeze`
-- \[Unfreeze\] unfreeze all students or a student (also mutes him or her in chat) `freeze`
-- \[Grant priv\] grant privileges to all students, a student or yourself (Note: if you need an assistant teacher grant him/her 'all' privileges)
-- \[Revoke priv\] revoke privileges from all students, a student or yourself (Note: if you need an assistant teacher grant him/her 'all' privileges)
-- \[Invisible\] turn yourself invisible `invisible`
+- \[_Heal_\] heal all students, a student or yourself
+- \[_Freeze_\] freeze all students or a student (also mutes him or her in chat) `freeze`
+- \[_Unfreeze_\] unfreeze all students or a student (also mutes him or her in chat) `freeze`
+- \[_Grant priv_\] grant privileges to all students, a student or yourself (Note: if you need an assistant teacher grant him/her 'all' privileges)
+- \[_Revoke priv_\] revoke privileges from all students, a student or yourself (Note: if you need an assistant teacher grant him/her 'all' privileges)
+- \[_Invisible_\] turn yourself invisible `invisible`
 
 ## Installation
 - download the repository as ZIP: https://github.com/apienk/minetest-edutest-ui/archive/master.zip
