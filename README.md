@@ -81,12 +81,12 @@ The goal of the MinetestEDU or EDUtest project is to make Minetest easy to use b
 - students don't need to be assigned any privileges to be affected by `all students` commands, just leave default (`shout` and `interact`)
 
 ## To do
-- ask questions in formspec and aggregate answers
-- student groups
-- written assignments
-- internationalization
-- reward system
-- controlled PvP
+- [ ] ask questions in formspec and aggregate answers
+- [ ] student groups
+- [ ] written assignments
+- [ ] internationalization
+- [ ] reward system
+- [ ] controlled PvP
 
 ## Other useful mods to use in classroom
 - my fork of `teaching` mod: https://github.com/apienk/minetest-teaching (with hires letters and other features)
