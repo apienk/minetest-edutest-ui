@@ -3,6 +3,7 @@ This mod provides user interface extensions for the MinetestEDU/EDUtest project.
 
 **Contents:**
   1. [Mission statement](https://github.com/apienk/minetest-edutest-ui#mission-statement)
+  1. [Dependencies](https://github.com/apienk/minetest-edutest-ui#dependencies)
   1. [GUI features](https://github.com/apienk/minetest-edutest-ui#gui-features)
       - [Components](https://github.com/apienk/minetest-edutest-ui#components)
       - [Inventory functions](https://github.com/apienk/minetest-edutest-ui#inventory-functions)
@@ -25,7 +26,17 @@ This mod provides user interface extensions for the MinetestEDU/EDUtest project.
 The goal of the MinetestEDU or EDUtest project is to make Minetest easy to use by a teacher in a classroom environment. The original idea was described in [this Minetest forum thread](https://forum.minetest.net/viewtopic.php?f=5&t=11452). The project is a collection of mods (a modpack) that allows teachers to feel in control of the students while in game.
 
 **Note 1:** Buttons will only show up if optionally `their respective mods` are loaded
+
 **Note 2:** The formspec tabs will only show up if player has `instructor` privilege
+
+## Dependencies
+- `edutest-chatcommands` https://github.com/apienk/edutest-chatcommands
+- `areas` https://github.com/ShadowNinja/areas (optional)
+- `teaching` https://github.com/apienk/minetest-teaching (optional)
+- `invisible` https://forum.minetest.net/viewtopic.php?t=14399 (optional)
+- `invmanagement` https://github.com/Sirvoid/InvManagement (optional)
+- `jailbox` https://github.com/apienk/minetest-jailbox (optional)
+- `freeze` https://github.com/PenguinDad/freeze (optional)
 
 ## GUI features
 
@@ -89,9 +100,7 @@ The goal of the MinetestEDU or EDUtest project is to make Minetest easy to use b
 - [ ] controlled PvP
 
 ## Other useful mods to use in classroom
-- my fork of `teaching` mod: https://github.com/apienk/minetest-teaching (with hires letters and other features)
 - my fork of `wardrobe` mod: https://github.com/apienk/minetest-mod-wardrobe (with nice GUI)
-- my `jailbox` mod: https://github.com/apienk/minetest-jailbox
 
 ## Some lesson ideas
 
