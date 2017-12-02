@@ -100,7 +100,8 @@ The goal of the MinetestEDU or EDUtest project is to make Minetest easy to use b
 - [ ] controlled PvP
 
 ## Other useful mods to use in classroom
-- my fork of `wardrobe` mod: https://github.com/apienk/minetest-mod-wardrobe (with nice GUI)
+- my fork of `wardrobe` mod: https://github.com/apienk/minetest-mod-wardrobe (adds a nice GUI)
+- my fork of `display_modpack`: https://github.com/apienk/display_modpack (adds Unicode support and new character textures for many languages)
 
 ## Some lesson ideas
 
