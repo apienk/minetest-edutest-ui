@@ -5,7 +5,6 @@ areas?
 jailbox?
 teaching?
 freeze?
-signs?
 invmanagement?
 bookmarks_gui?
 invisible?
