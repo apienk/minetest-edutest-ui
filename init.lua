@@ -8,7 +8,6 @@ local edufilter = ""
 -- Set default itempacks and load user's itempacks from file
 local itempacks = {
 	{name = "Survival Kit", pack = {"default:pick_wood 1", "default:axe_wood 1", "default:apple 10"}},
-	{name = "Numbers", pack = {"teaching:util_0 5", "teaching:util_1 5", "teaching:util_2 5", "teaching:util_3 5", "teaching:util_4 5", "teaching:util_5 5", "teaching:util_6 5", "teaching:util_7 5", "teaching:util_8 5", "teaching:util_9 5" }}
 	}
 local load_itempacks = function(player)
 	local target = player:get_player_name()
