@@ -29,10 +29,6 @@ end
 local form1_update = function(player, fields)
 	local cmddef = minetest.chatcommands
 	local target = player:get_player_name()
-	if not minetest.check_player_privs(player, { instructor = true}) then
-		minetest.chat_send_player(target, "---Forbidden. No instructor privileges.")
-		return
-	end
 	-- Give me
 	if fields.gvme then
 		if fields.items and fields.items ~= "Choose item" then
@@ -338,10 +334,6 @@ end
 local form2_update = function(player, fields)
 	local cmddef = minetest.chatcommands
 	local target = player:get_player_name()
-	if not minetest.check_player_privs(player, { instructor = true}) then
-		minetest.chat_send_player(target, "---Forbidden. No instructor privileges.")
-		return
-	end
 	-- Create protected area
 	if fields.prot then
 		local areaname
@@ -702,6 +694,9 @@ sfinv.register_page("edutest_ui:edu", {
 		if minetest.check_player_privs(player, { instructor = true}) then
 			form1_update(player, fields)
 			sfinv.set_page(player, "edutest_ui:edu")
+		else
+			minetest.chat_send_player(player:get_player_name(),
+				"---Forbidden. No instructor privileges.")
 		end
 	end,
 })
@@ -718,6 +713,9 @@ sfinv.register_page("edutest_ui:world", {
 		if minetest.check_player_privs(player, { instructor = true}) then
 			form2_update(player, fields)
 			sfinv.set_page(player, "edutest_ui:world")
+		else
+			minetest.chat_send_player(player:get_player_name(),
+				"---Forbidden. No instructor privileges.")
 		end
 	end,
 })
