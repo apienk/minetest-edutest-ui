@@ -67,7 +67,9 @@ local form1_update = function(player, fields)
 			for i = 0,3 do
 				for j = 0,7 do
 					local k = i*8+j+1
-					invgui = invgui .. "item_image_button[" .. j .. "," .. i .. ";1,1;" .. invpl:get_stack("main",k):get_name() .. ";inv" .. k ..";\n\n\b\b\b" .. invpl:get_stack("main",k):get_count() .."]"
+					invgui = invgui .. "item_image_button[" .. j .. "," .. i .. ";1,1;" ..
+						invpl:get_stack("main",k):get_name() .. ";inv" .. k ..
+						";\n\n\b\b\b" .. invpl:get_stack("main",k):get_count() .."]"
 				end
 			end
 			minetest.show_formspec(target, "invform", invgui)
@@ -100,7 +102,8 @@ local form1_update = function(player, fields)
 		if fields.students ~= "All students" and fields.students ~= "Choose students" then
 			cmddef["clearinv"].func(target, target)
 			cmddef["copyinv"].func(target, fields.students)
-			minetest.chat_send_player(target, "---You cloned " .. fields.students .. "\'s inventory to your inventory (your inventory was deleted)")
+			minetest.chat_send_player(target, "---You cloned " .. fields.students ..
+				"\'s inventory to your inventory (your inventory was deleted)")
 		else
 			minetest.chat_send_player(target, "---Please specify a student")
 		end
@@ -319,7 +322,8 @@ local form1_update = function(player, fields)
 	if fields.alph then
 		if fields.msgtxt then
 			if #fields.msgtxt > 24 then
-				minetest.chat_send_player(target, "---Text is too long to alphabetize to your inventory. Try a couple of words at a time")
+				minetest.chat_send_player(target, "---Text is too long to alphabetize to your " ..
+					"inventory. Try a couple of words at a time")
 			else
 				cmddef["alphabetize"].func(target, fields.msgtxt)
 				minetest.chat_send_player(target, "---You have alphabetized: " .. fields.msgtxt)
@@ -350,18 +354,22 @@ local form2_update = function(player, fields)
 			if area.name == areaname then
 				minetest.chat_send_player(target, "---Error. Area with this name already exists. Try again.")
 				return
-			end	
-		end	
+			end
+		end
 		if fields.numb ~= "Radius" then
 			local center = player:getpos()
-			cmddef["area_pos1"].func(target, math.floor(center.x) - fields.numb .. " " .. math.floor(center.y) - fields.numb .. " " .. math.floor(center.z) - fields.numb)
-			cmddef["area_pos2"].func(target, math.floor(center.x) + fields.numb .. " " .. math.floor(center.y) + fields.numb .. " " .. math.floor(center.z) + fields.numb)
+			cmddef["area_pos1"].func(target, math.floor(center.x) - fields.numb .. " " ..
+				math.floor(center.y) - fields.numb .. " " .. math.floor(center.z) - fields.numb)
+			cmddef["area_pos2"].func(target, math.floor(center.x) + fields.numb .. " " ..
+				math.floor(center.y) + fields.numb .. " " .. math.floor(center.z) + fields.numb)
 			if fields.students == "All students" or fields.students == "Choose students" then
 				cmddef["set_owner"].func(target, target .. " " .. areaname)
-				minetest.chat_send_player(target, "---You created a protected area " .. areaname .. " with radius of " .. fields.numb .. " owned by you")
+				minetest.chat_send_player(target, "---You created a protected area " .. areaname ..
+					" with radius of " .. fields.numb .. " owned by you")
 			else
 				cmddef["set_owner"].func(target, fields.students .. " " .. areaname)
-				minetest.chat_send_player(target, "---You created a protected area " .. areaname .. " with radius of " .. fields.numb .. " owned by " .. fields.students)
+				minetest.chat_send_player(target, "---You created a protected area " .. areaname ..
+					" with radius of " .. fields.numb .. " owned by " .. fields.students)
 			end
 		else
 			minetest.chat_send_player(target, "---Please specify radius of the protected area")
@@ -644,7 +652,8 @@ local set_worldformspec = function()
 	worldformspec = worldformspec .. "dropdown[0,8.1;4.1;privs;" .. privs_list() .. ";1]"
 	worldformspec = worldformspec .. "button[4,8;2,1;grnt;Grant]"
 	worldformspec = worldformspec .. "button[6,8;2,1;rvok;Revoke]"
-	if minetest.chatcommands["set_owner"] and minetest.chatcommands["area_pos1"] and minetest.chatcommands["area_pos2"] then
+	if minetest.chatcommands["set_owner"] and minetest.chatcommands["area_pos1"] and
+			minetest.chatcommands["area_pos2"] then
 		worldformspec = worldformspec .. "dropdown[4,3.1;4.1;alist;" .. areas_list() .. ";1]"
 		worldformspec = worldformspec .. "label[4,2.75;Select area]"
 		worldformspec = worldformspec .. "button[0,4;2,1;prot;Create area]"
