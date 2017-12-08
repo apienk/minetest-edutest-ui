@@ -231,11 +231,11 @@ local form1_update = function(player, fields)
 				return
 			end
 			-- Get user's inventory
-			local stacks, i, a = {}, "", ""
+			local stacks = {}
 			local pinv = minetest.get_inventory({type="player", name=target})
 			for _,s in pairs(pinv:get_list("main")) do
-				i = s:get_definition().name
-				a = s:get_count()
+				local i = s:get_definition().name
+				local a = s:get_count()
 				if a > 0 then
 					table.insert(stacks, i .. " " .. a)
 				end
