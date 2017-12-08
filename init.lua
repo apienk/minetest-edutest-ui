@@ -14,7 +14,7 @@ local load_itempacks = function(player)
 	local itempackfile = io.open(minetest.get_worldpath() .. "/" .. target .. ".itempacks", "r")
 	if itempackfile then
 		itempackfile:close()
-		print("[edutest-ui] Loading itempacks for " .. target)
+		minetest.log("action", "[edutest-ui] Loading itempacks for " .. target)
 		for line in io.lines(minetest.get_worldpath() .. "/" .. target .. ".itempacks") do
 			local v = loadstring("return "..line)()
 			local d = false
