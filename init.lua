@@ -680,10 +680,11 @@ local set_worldformspec = function()
 		worldformspec = worldformspec .. "button[6,6;2,1;brng;Bring to me]"
 	end
 	if minetest.chatcommands["freeze"] then
-		worldformspec = worldformspec .. "button[0,6;2,1;frze;Freeze]"
+		worldformspec = worldformspec .. "button[0.0,6;1.3,1;frze;Freeze]"
+		worldformspec = worldformspec .. "button[1.3,6;1.3,1;frz1;Freeze1]"
 	end
 	if minetest.chatcommands["unfreeze"] then
-		worldformspec = worldformspec .. "button[2,6;2,1;unfr;Unfreeze]"
+		worldformspec = worldformspec .. "button[2.6,6;1.3,1;unfr;Unfreeze]"
 	end
 	if minetest.chatcommands["jailbox_set"] then
 		worldformspec = worldformspec .. "button[0,5;2,1;jlcr;Create Jailbox]"
