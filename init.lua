@@ -127,34 +127,6 @@ local form1_update = function(player, fields)
 		minetest.chat_send_player(target, "---You healed yourself")
 		return
 	end
-	-- Freeze
-	if fields.frze then
-		if fields.students ~= "Choose students" then
-			if fields.students == "All students" then
-				cmddef["every_student"].func(target, "freeze subject")
-			else
-				cmddef["freeze"].func(target, fields.students)
-			end
-			minetest.chat_send_player(target, "---You froze " .. fields.students)
-		else
-			minetest.chat_send_player(target, "---Please specify student(s)")
-		end
-		return
-	end
-	-- Unfreeze
-	if fields.unfr then
-		if fields.students ~= "Choose students" then
-			if fields.students == "All students" then
-				cmddef["every_student"].func(target, "unfreeze subject")
-			else
-				cmddef["unfreeze"].func(target, fields.students)
-			end
-			minetest.chat_send_player(target, "---You unfroze " .. fields.students)
-		else
-			minetest.chat_send_player(target, "---Please specify student(s)")
-		end
-		return
-	end
 	-- Pulverize
 	if fields.empt then
 		cmddef["pulverize"].func(target, "")
@@ -511,6 +483,34 @@ local form2_update = function(player, fields)
 	-- Invisible
 	if fields.invi then
 		cmddef["invisible"].func(target)
+		return
+	end
+	-- Freeze
+	if fields.frze then
+		if fields.students ~= "Choose students" then
+			if fields.students == "All students" then
+				cmddef["every_student"].func(target, "freeze subject")
+			else
+				cmddef["freeze"].func(target, fields.students)
+			end
+			minetest.chat_send_player(target, "---You froze " .. fields.students)
+		else
+			minetest.chat_send_player(target, "---Please specify student(s)")
+		end
+		return
+	end
+	-- Unfreeze
+	if fields.unfr then
+		if fields.students ~= "Choose students" then
+			if fields.students == "All students" then
+				cmddef["every_student"].func(target, "unfreeze subject")
+			else
+				cmddef["unfreeze"].func(target, fields.students)
+			end
+			minetest.chat_send_player(target, "---You unfroze " .. fields.students)
+		else
+			minetest.chat_send_player(target, "---Please specify student(s)")
+		end
 		return
 	end
 	-- Create Jailbox
