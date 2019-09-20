@@ -499,6 +499,20 @@ local form2_update = function(player, fields)
 		end
 		return
 	end
+	-- Freeze a player for 1 minute, then unfreeze
+	if fields.frz1 then
+		if fields.students ~= "Choose students" and fields.students ~= "All students" then
+			cmddef["freeze"].func(target, fields.students)
+			minetest.chat_send_player(target, "–––You froze " .. fields.students .. " for 1 minute")
+			local function thaw()
+				cmddef["unfreeze"].func(target, fields.students)
+				minetest.chat_send_player(target, "–––" .. fields.students .. " is not frozen anymore")
+			end
+			minetest.after(60, thaw)
+		else	
+			minetest.chat_send_player(target, "---Please specify a student")
+		end
+	end
 	-- Unfreeze
 	if fields.unfr then
 		if fields.students ~= "Choose students" then
